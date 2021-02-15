@@ -27,11 +27,13 @@ namespace FlightSimulation
             {
                 isPaused = true;
                 timer1.Stop();
+                button_pause.Text = "Unpause";
             }
             else if (isPaused)
             {
                 isPaused = false;
                 timer1.Start();
+                button_pause.Text = "Pause";
             }
         }
 
@@ -39,6 +41,8 @@ namespace FlightSimulation
         {
             if (!timer1.Enabled && !isPaused)
             {
+                seconds = 0;
+                minutes = 0;
                 chart1.Series[0].Points.Clear();               
                 chart1.Series[0].Points.AddXY(0, numeric_height.Value);
                 model.GetStarted(numeric_height.Value, numeric_speed.Value,
@@ -72,8 +76,6 @@ namespace FlightSimulation
             {
                 timer1.Stop();
                 chart1.Series[0].Points.AddXY(x, 0);
-                seconds = 0;
-                minutes = 0;
             }
             else
             {

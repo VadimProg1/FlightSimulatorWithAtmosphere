@@ -18,3 +18,13 @@ C:\Users\Вадим\source\repos\FlightSimulationWithAtmosphere\FlightSimulation
 C:\Users\Вадим\source\repos\FlightSimulationWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.csproj.CoreCompileInputs.cache
 C:\Users\Вадим\source\repos\FlightSimulationWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.exe
 C:\Users\Вадим\source\repos\FlightSimulationWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.pdb
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\bin\Debug\FlightSimulation.exe.config
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\bin\Debug\FlightSimulation.exe
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\bin\Debug\FlightSimulation.pdb
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.csprojAssemblyReference.cache
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.Form1.resources
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.Properties.Resources.resources
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.csproj.GenerateResource.cache
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.csproj.CoreCompileInputs.cache
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.exe
+C:\Users\Вадим\source\repos\FlightSimulatorWithAtmosphere\FlightSimulation\obj\Debug\FlightSimulation.pdb
