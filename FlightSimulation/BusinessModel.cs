@@ -8,7 +8,7 @@ namespace FlightSimulation
 {
     class BusinessModel
     {
-        decimal t, x = 0, y = 0, v0, cosA, sinA, S, m, k, vx, vy;
+        decimal t, x = 0, y = 0, v0, cosA, sinA, S, m, k, vx, vy, maxX = 0, maxY = 0;
         const decimal g = 9.81M, C = 0.15M, rho = 1.29M, dt = 0.1M;
         public void GetStarted(decimal height, decimal speed, decimal angle,
             decimal weight, decimal size)
@@ -35,6 +35,33 @@ namespace FlightSimulation
             vy = vy - (g + k * vy * v) * dt;
             x = x + vx * dt;
             y = y + vy * dt;
+        }
+
+        public void FindMaxXAndY(decimal height, decimal speed, decimal angle,
+            decimal weight, decimal size)
+        {
+            GetStarted(height, speed, angle, weight, size);
+            NextTick();
+            while(y > 0)
+            {
+                if(y > maxY)
+                {
+                    maxY = y;
+                }
+                NextTick();
+            }
+            maxX = x;
+            GetStarted(height, speed, angle, weight, size);
+        }
+
+        public decimal GetMaxX()
+        {
+            return maxX;
+        }
+
+        public decimal GetMaxY()
+        {
+            return maxY;
         }
 
         public decimal GetX()

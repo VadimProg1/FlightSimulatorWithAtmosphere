@@ -47,11 +47,21 @@ namespace FlightSimulation
                 chart1.Series[0].Points.AddXY(0, numeric_height.Value);
                 model.GetStarted(numeric_height.Value, numeric_speed.Value,
                     numeric_angle.Value, numeric_weight.Value, numeric_size.Value);
+                model.FindMaxXAndY(numeric_height.Value, numeric_speed.Value,
+                    numeric_angle.Value, numeric_weight.Value, numeric_size.Value);
+                SetupChart();
                 timer1.Start();
             }
             
         }
 
+        private void SetupChart()
+        {
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.ChartAreas[0].AxisX.Maximum = (double)model.GetMaxX();
+            chart1.ChartAreas[0].AxisY.Minimum = 0;
+            chart1.ChartAreas[0].AxisY.Maximum = (double)model.GetMaxY();
+        }
         private void UpdateTime()
         {
             if(seconds >= 60)
